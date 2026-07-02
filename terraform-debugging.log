@@ -1,0 +1,27 @@
+2026-07-02T22:26:02.836+0200 [INFO]  Terraform version: 1.15.6
+2026-07-02T22:26:02.837+0200 [DEBUG] using github.com/hashicorp/go-tfe v1.105.0
+2026-07-02T22:26:02.837+0200 [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-07-02T22:26:02.837+0200 [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-07-02T22:26:02.838+0200 [DEBUG] using github.com/zclconf/go-cty v1.18.0
+2026-07-02T22:26:02.838+0200 [INFO]  Go runtime version: go1.25.10
+2026-07-02T22:26:02.839+0200 [INFO]  CLI args: []string{"terraform", "apply"}
+2026-07-02T22:26:02.839+0200 [TRACE] Stdout is a terminal of width 82
+2026-07-02T22:26:02.839+0200 [TRACE] Stderr is a terminal of width 82
+2026-07-02T22:26:02.840+0200 [TRACE] Stdin is a terminal
+2026-07-02T22:26:02.841+0200 [DEBUG] Attempting to open CLI config file: /home/hassan/.terraformrc
+2026-07-02T22:26:02.841+0200 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-07-02T22:26:02.842+0200 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-07-02T22:26:02.843+0200 [DEBUG] ignoring non-existing provider search directory /home/hassan/.terraform.d/plugins
+2026-07-02T22:26:02.843+0200 [DEBUG] ignoring non-existing provider search directory /home/hassan/.local/share/terraform/plugins
+2026-07-02T22:26:02.844+0200 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-07-02T22:26:02.844+0200 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-07-02T22:26:02.844+0200 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-07-02T22:26:02.846+0200 [INFO]  CLI command args: []string{"apply"}
+2026-07-02T22:26:02.857+0200 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2026-07-02T22:26:02.858+0200 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2026-07-02T22:26:02.858+0200 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2026-07-02T22:26:02.858+0200 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2026-07-02T22:26:02.863+0200 [DEBUG] checking for provisioner in "."
+2026-07-02T22:26:02.866+0200 [DEBUG] checking for provisioner in "/usr/bin"
+2026-07-02T22:26:02.867+0200 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2026-07-02T22:26:02.873+0200 [INFO]  backend/local: starting Apply operation

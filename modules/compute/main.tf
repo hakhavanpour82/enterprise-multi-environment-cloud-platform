@@ -7,9 +7,8 @@ terraform {
   }
 }
 
-resource "hcloud_ssh_key" "admin_key" {
-  name       = var.ssh_key_name
-  public_key = var.public_key
+data "hcloud_ssh_key" "existing_key" {
+  name = var.ssh_key_name
 }
 
 resource "hcloud_server" "app_server" {
@@ -17,7 +16,8 @@ resource "hcloud_server" "app_server" {
   server_type = var.server_type
   image       = var.image
   location    = var.location
-  ssh_keys    = [hcloud_ssh_key.admin_key.id]
+  
+  ssh_keys    = [data.hcloud_ssh_key.existing_key.id]
 
   network {
     network_id = var.private_network_id
@@ -33,4 +33,3 @@ resource "hcloud_server" "app_server" {
               apt-get upgrade -y
               EOF
 }
-
