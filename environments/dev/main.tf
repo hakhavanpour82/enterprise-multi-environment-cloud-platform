@@ -11,10 +11,10 @@ module "dev_compute" {
   source = "../../modules/compute"
 
   server_name        = "app-server-${var.environment}"
-  server_type        = "cx22"
+  server_type        = "cx23"
   image              = "ubuntu-22.04"
   location           = "nbg1"
-  ssh_key_name       = "admin-key-${var.environment}"
+  ssh_key_name       = "ter-to-hertzner"
   public_key         = var.ssh_public_key
   private_network_id = module.dev_networking.network_id
 }
